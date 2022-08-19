@@ -1,0 +1,7 @@
+.profile {
+    background: linear-gradient(45deg, rgba(254,252,234,1) 36%,rgba(241,218,54,1) 100%);
+    padding: 40px 40px;
+    box-sizing: border-box;
+    grid-area: 'content';
+    border-radius: 1%;
+}

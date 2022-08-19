@@ -1,0 +1,27 @@
+.about{
+    grid-area: 'about';
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-bottom: 2px solid grey;
+    padding-bottom: 40px;
+
+}
+
+.aboutuser {
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.aboutme {
+    font-family: 'System', sans-serif;
+    font-size: 28px;
+    color:black;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, rgba(211,211,211,1) 26%,rgba(201,193,144,1) 72%,rgba(183,173,112,1) 100%);
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+} 
