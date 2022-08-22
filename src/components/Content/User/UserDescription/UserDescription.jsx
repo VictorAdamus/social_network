@@ -4,10 +4,10 @@ import classes from './style.module.css'
 const UserDescription = (props) => {
     return (
         <div className={classes.user_description}>
-            <p>Name: <span className={classes.user_data}>{props.name} </span></p>
-            <p>Age: <span className={classes.user_data}>{props.age}</span> y.o.</p>
-            <p>Gender: <span className={classes.user_data}>{props.gender}</span></p>
-            <p>Profession: <span className={classes.user_data}>{props.profession}</span></p>
+            <p className={classes.user_description_item}>Name: <span className={classes.user_data}>{props.name} </span></p>
+            <p className={classes.user_description_item}>Age: <span className={classes.user_data}>{props.age}</span> y.o.</p>
+            <p className={classes.user_description_item}>Gender: <span className={classes.user_data}>{props.gender}</span></p>
+            <p className={classes.user_description_item}>Profession: <span className={classes.user_data}>{props.profession}</span></p>
         </div>
     )
 }

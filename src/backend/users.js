@@ -1,6 +1,6 @@
 const users = [
     {
-        name: 'Gomer Simpson',
+        name: 'Homer Simpson',
         avatar: 'https://i.pinimg.com/236x/14/16/fa/1416fadfd025ca5c088e4408db456800.jpg',
         age: '49',
         gender: 'Male',
@@ -35,9 +35,19 @@ const users = [
             link: 'https://i.ytimg.com/vi/h95kfizTofU/maxresdefault.jpg',
             id: '8'
         }],
-        posts: ['You can have all the money in the world, but there’s one thing you will never have… a dinosaur.',
-            'The problem in the world today is communication… too much communication.',
-            'I think the saddest day of my life was when I realised I could beat my dad at most things, and Bart experienced that at the age of four.']
+        posts: [{
+            text: 'You can have all the money in the world, but there’s one thing you will never have… a dinosaur.',
+            id: '1'
+        },
+        {
+            text: 'The problem in the world today is communication… too much communication.',
+            id: '2'
+        },
+        {
+            text: 'I think the saddest day of my life was when I realised I could beat my dad at most things, and Bart experienced that at the age of four.',
+            id: '3'
+        }
+        ]
     }
 ]
 

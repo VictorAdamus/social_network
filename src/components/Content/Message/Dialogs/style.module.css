@@ -1,0 +1,30 @@
+.dialogList {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid grey;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.dialogItem {
+    list-style-type: none;
+    font-family: 'System', sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 20px 10px;
+}
+
+.dialogItem:active {
+    color: gold;
+    text-shadow: 1px 1px 2px gold;
+}
+
+.active {
+    color: gold;
+    text-shadow: 1px 1px 2px gold;
+}

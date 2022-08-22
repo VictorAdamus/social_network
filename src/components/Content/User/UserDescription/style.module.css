@@ -40,7 +40,10 @@
 
 
 
-.user_description p {
+.user_description_item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     border-bottom: 1px solid blue;
 }
 
@@ -48,4 +51,6 @@
     font-family: 'User', sans-serif;
     font-size: 18px;
     margin: 0;
+    margin-left: auto;
+    padding-right: 10px;
 }

@@ -9,13 +9,14 @@ import UserPosts from "./UserPosts/UserPosts";
 
 const User = () => {
     const images = (users[0].images)
-    console.log(images)
+    const posts = (users[0].posts)
+    console.log(posts)
     return (
         <div className={classes.user}>
             <UserInfo avatar={`${users[0].avatar}`} name={`${users[0].name}`} age={`${users[0].age}`} profession={`${users[0].profession}`} gender={`${users[0].gender}`} />
             <AboutUser about={`${users[0].about}`} />
-            <UserImagesList images={`${[...images]}`} />
-            <UserPosts posts={`${users[0].posts}`} avatar={`${users[0].avatar}`} />
+            <UserImagesList images={[...images]} />
+            <UserPosts posts={[...posts]} avatar={`${users[0].avatar}`} />
         </div>
     )
 }

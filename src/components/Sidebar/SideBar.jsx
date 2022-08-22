@@ -1,17 +1,22 @@
 import React from "react";
-import classes from './style.module.css'
+import { NavLink } from "react-router-dom";
+import './style.css';
+import cn from 'classnames';
 
 const SideBar = () => {
+   // const setActive = ({ isActive }) => {
+   //    return isActive ? 'activeLink' : ''
+   // };
    return (
-      <nav className={classes.sidebar}>
-         <ul className={classes.sidebar__list}>
-            <li className={`${classes.sidebar__item} ${classes.active}`}><a href="/user">Profile</a></li>
-            <li className={classes.sidebar__item}><a href="/news">News</a></li>
-            <li className={classes.sidebar__item}><a href="/music">Music</a></li>
-            <li className={classes.sidebar__item}><a href="/settings">Settings</a></li>
-            <li className={classes.sidebar__item}><a href="/message">Message</a></li>
+      <nav className='sidebar'>
+         <ul className='sidebar__list'>
+            <li className='sidebar__item'><NavLink exact='true' className={cn('sidebar__link', ({ isActive }) => isActive ? 'active' : '')} to='/'>Profile</NavLink></li>
+            <li className='sidebar__item'><NavLink exact='true' className={cn('sidebar__link', ({ isActive }) => isActive ? 'active' : '')} to='/music'>Music</NavLink></li>
+            <li className='sidebar__item'><NavLink exact='true' className={cn('sidebar__link', ({ isActive }) => isActive ? 'active' : '')} to='/settings'>Settings</NavLink></li>
+            <li className='sidebar__item'><NavLink exact='true' className={cn('sidebar__link', ({ isActive }) => isActive ? 'active' : '')} to='/message'>Message</NavLink></li>
+            <li className='sidebar__item'><NavLink exact='true' className={cn('sidebar__link', ({ isActive }) => isActive ? 'active' : '')} to='/news'>News</NavLink></li>
          </ul>
-      </nav>
+      </nav >
    )
 }
 

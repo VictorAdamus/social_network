@@ -13,7 +13,10 @@
   list-style-type: none;
 }
 
-.sidebar__item {
+.sidebar__link  {
+    display: block;
+    text-decoration: none;
+    color:black;
     font-family: 'System', sans-serif;
     font-size: 28px;
     cursor: pointer;
@@ -25,18 +28,14 @@
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
-.sidebar__item:hover {
-    transform: rotateZ(10deg);
+
+.sidebar__link:hover {
+    transform: rotateZ(5deg);
     box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.5);
 }
 
-.sidebar__item:active {
+.sidebar__link:active {
     background: linear-gradient(45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%);
-}
-
-.sidebar__item a {
-    text-decoration: none;
-    color:black;
 }
 
 .sidebar__item:not(:last-child) {
