@@ -5,6 +5,7 @@ import classname from 'classnames';
 
 const styles = classname.bind(classes);
 const DialogItem = (props) => {
+    console.log(props.id)
     const activeLink = styles(classes.dialogLink, classes.activeLink);
     const link = styles(classes.dialogLink);
     const setActive = ({ isActive }) => (isActive ? activeLink : link);

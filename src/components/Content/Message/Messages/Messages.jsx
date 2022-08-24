@@ -3,7 +3,7 @@ import AddMessage from '../../../../ui/AddMessage/AddMessage';
 import MessagesItem from './MessageItem/MessageItem';
 import classes from './style.module.css'
 
-const Messages = () => {
+const Messages = (props) => {
     return (
         <div className={classes.messages}>
             <ul className={classes.messagesList}>

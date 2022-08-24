@@ -1,0 +1,14 @@
+.sidebar {
+    background-color: rgba(217, 221, 150, 1);
+    grid-area: sidebar;
+    border-radius: 10px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

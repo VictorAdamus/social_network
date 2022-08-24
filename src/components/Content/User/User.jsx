@@ -8,16 +8,22 @@ import users from "../../../backend/users.js";
 import UserPosts from "./UserPosts/UserPosts";
 
 const User = () => {
-    const name = users[0].name;
-    const images = users[0].images;
-    const posts = users[0].posts;
-    const avatar = users[0].avatar;
+    const user = users[0];
+    const age = user.age;
+    const gender = user.gender;
+    const city = user.city
+    const profession = user.profession
+    const about = user.about
+    const images = user.images;
+    const posts = user.posts;
+    const avatar = user.avatar;
+    const name = user.name;
     return (
         <div className={classes.user}>
-            <UserInfo avatar={avatar} name={name} age={`${users[0].age}`} profession={`${users[0].profession}`} gender={`${users[0].gender}`} city={`${users[0].city}`} />
-            <AboutUser about={`${users[0].about}`} />
+            <UserInfo avatar={avatar} name={name} age={age} profession={profession} gender={gender} city={city} />
+            <AboutUser about={about} />
             <UserImagesList images={[...images]} />
-            <UserPosts name={name} posts={[...posts]} avatar={`${users[0].avatar}`} />
+            <UserPosts name={name} posts={[...posts]} avatar={avatar} />
         </div>
     )
 }

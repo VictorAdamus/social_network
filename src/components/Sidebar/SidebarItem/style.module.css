@@ -1,19 +1,4 @@
-.sidebar {
-    background-color: rgba(217, 221, 150, 1);
-    grid-area: sidebar;
-    border-radius: 10px;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.sidebar__link  {
+.sidebarLink  {
     display: block;
     text-decoration: none;
     color:black;
@@ -28,12 +13,12 @@
 }
 
 
-.sidebar__link:hover {
+.sidebarLink:hover {
     color: white;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
 }
 
-.sidebar__link:active {
+.sidebarLink:active {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -41,7 +26,7 @@
     margin-bottom: 30px;;
 }
 
-.active {
+.activeLink {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
 }

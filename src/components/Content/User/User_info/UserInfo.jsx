@@ -6,7 +6,7 @@ import classes from './style.module.css'
 const UserInfo = (props) => {
     return (
         <div className={classes.user__info}>
-            <UserPhoto avatar={props.avatar} name={props.name} />
+            <UserPhoto avatar={props.avatar} name={props.name} w='300px' h='300px' />
             <UserDescription name={props.name} age={props.age} gender={props.gender} profession={props.profession} city={props.city} />
         </div>
     )

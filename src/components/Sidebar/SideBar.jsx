@@ -1,18 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import './style.css';
-import classname from 'classnames';
+import classes from './style.module.css';
+import SidebarItem from "./SidebarItem/SidebarItem";
 
-const SidebarItem = (props) => {
-   return (
-      <li className='sidebar__item'><NavLink className={classname('sidebar__link', ({ isActive }) => isActive ? 'active' : '')} to={props.to}>{props.name}</NavLink></li>
-   )
-}
 
 const SideBar = () => {
    return (
-      <nav className='sidebar'>
-         <ul className='sidebar__list'>
+      <nav className={classes.sidebar}>
+         <ul className={classes.sidebar__list}>
             <SidebarItem name='Profile' to='/' />
             <SidebarItem name='Message' to='/message' />
             <SidebarItem name='Music' to='/music' />
