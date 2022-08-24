@@ -10,13 +10,13 @@ import classes from './style.module.css';
 
 const Content = () => {
   return (
-    <div className={classes.profile}>
+    <div className={classes.content}>
       <Routes>
         <Route exact path="/" element={<User />} />
         <Route exact path="/news" element={<News />} />
         <Route exact path="/music" element={<Music />} />
         <Route exact path="/settings" element={<Settings />} />
-        <Route exact path="/message" element={<Message />} />
+        <Route exact path="/message/*" element={<Message />} />
       </Routes>
     </div>
   )

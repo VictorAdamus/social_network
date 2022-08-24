@@ -1,0 +1,24 @@
+.button {
+    font-family: 'System', sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px 5px;
+    background-color: rgba(217, 221, 150, 0.8);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    color: white;
+}

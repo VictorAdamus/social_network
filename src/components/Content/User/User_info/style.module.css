@@ -1,6 +1,7 @@
 .user__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     margin-bottom: 40px;
     padding-bottom: 40px;
 }

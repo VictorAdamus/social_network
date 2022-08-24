@@ -8,15 +8,16 @@ import users from "../../../backend/users.js";
 import UserPosts from "./UserPosts/UserPosts";
 
 const User = () => {
-    const images = (users[0].images)
-    const posts = (users[0].posts)
-    console.log(posts)
+    const name = users[0].name;
+    const images = users[0].images;
+    const posts = users[0].posts;
+    const avatar = users[0].avatar;
     return (
         <div className={classes.user}>
-            <UserInfo avatar={`${users[0].avatar}`} name={`${users[0].name}`} age={`${users[0].age}`} profession={`${users[0].profession}`} gender={`${users[0].gender}`} />
+            <UserInfo avatar={avatar} name={name} age={`${users[0].age}`} profession={`${users[0].profession}`} gender={`${users[0].gender}`} city={`${users[0].city}`} />
             <AboutUser about={`${users[0].about}`} />
             <UserImagesList images={[...images]} />
-            <UserPosts posts={[...posts]} avatar={`${users[0].avatar}`} />
+            <UserPosts name={name} posts={[...posts]} avatar={`${users[0].avatar}`} />
         </div>
     )
 }

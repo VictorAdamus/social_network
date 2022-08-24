@@ -5,6 +5,7 @@ const users = [
         age: '49',
         gender: 'Male',
         profession: 'Engeener',
+        city: 'Springfield',
         about: `Homer Jay Simpson is one of the main characters of the American animated sitcom The Simpsons.He is voiced by Dan Castellaneta and first appeared, along with the rest of his family, in The Tracey Ullman Show short "Good Night" on April 19, 1987.
     Homer was created and designed by cartoonist Matt Groening while he was waiting in the lobby of producer James L. Brooks's office.
     Groening had been called to pitch a series of shorts based on his comic strip Life in Hell but instead decided to create a new set of characters.
@@ -12,28 +13,36 @@ const users = [
     The show was later acquired by Disney in 2019.`,
         images: [{
             link: 'http://2.bp.blogspot.com/-XM6Kg2yGy4o/T4mEQ4_1qTI/AAAAAAAAAe4/HI5GNX6cyss/s640/homer-simpson.jpg',
-            id: '1'
+            id: '1',
+            description: "I'm a cowboy"
         }, {
             link: 'https://ionlycameforthecake.files.wordpress.com/2016/05/imagine-driving-with-one-hand-off-the-wheel-fucking-cartoon-show-off.jpg',
-            id: '2'
+            id: '2',
+            description: "I'm driving"
         }, {
             link: 'https://i.ytimg.com/vi/fTtFWXjvDOI/maxresdefault.jpg',
-            id: '3'
+            id: '3',
+            description: "I'm at the bar"
         }, {
             link: 'https://i.ytimg.com/vi/4XZYV4u-5gw/maxresdefault.jpg',
-            id: '4'
+            id: '4',
+            description: "I bought an iPad"
         }, {
             link: 'https://pbs.twimg.com/media/DzUTZVXX0AECd1D.jpg:large',
-            id: '5'
+            id: '5',
+            description: "I'm Julius Caesar"
         }, {
             link: 'https://i.ytimg.com/vi/Ikrh9NIZN0Q/hqdefault.jpg',
-            id: '6'
+            id: '6',
+            description: "I'm reading the recipe"
         }, {
             link: 'https://i.ytimg.com/vi/p1-3UIFGgUU/hqdefault.jpg',
-            id: '7'
+            id: '7',
+            description: "I'm near the Leaning Tower of Pisa"
         }, {
             link: 'https://i.ytimg.com/vi/h95kfizTofU/maxresdefault.jpg',
-            id: '8'
+            id: '8',
+            description: "I'm with friends at the bar"
         }],
         posts: [{
             text: 'You can have all the money in the world, but there’s one thing you will never have… a dinosaur.',

@@ -1,0 +1,13 @@
+.title {
+    font-family: 'System', sans-serif;
+    font-size: 28px;
+    color:black;
+    padding: 10px 30px;
+    /* background-color:rgba(128,128,128,0.2); */
+    background-color: rgba(217, 221, 150, 1);;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+
+}

@@ -1,0 +1,29 @@
+.dialogItem {
+    list-style-type: none;
+}
+
+.dialogLink {
+    display: block;
+    font-family: 'System', sans-serif;
+    font-size: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+}
+
+.dialogLink:hover {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.dialogLink:active {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.activeLink {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,18 +1,17 @@
 import React from 'react';
+import AddMessage from '../../../../ui/AddMessage/AddMessage';
+import MessagesItem from './MessageItem/MessageItem';
 import classes from './style.module.css'
 
 const Messages = () => {
     return (
         <div className={classes.messages}>
             <ul className={classes.messagesList}>
-                <li className={classes.messagesItem}><span className={classes.messagesItemAvatar}>Bart Simpson:</span><span className={classes.messagesItemText}>"Hello! How are you?"</span></li>
-                <li className={classes.messagesItem}><span className={classes.messagesItemAvatar}>Bart Simpson:</span><span className={classes.messagesItemText}>"Let's go to the sea tomorrow"</span></li>
-                <li className={classes.messagesItem}><span className={classes.messagesItemAvatar}>Bart Simpson:</span><span className={classes.messagesItemText}>"You can take beer, vodka and a few girls with you. Let's go relax and sunbathe"</span></li>
+                <MessagesItem name='Bart Simpson' message="Hello! How are you?" />
+                <MessagesItem name='Bart Simpson' message="Let's go to the sea tomorrow" />
+                <MessagesItem name='Bart Simpson' message="You can take beer, vodka and a few girls with you. Let's go relax and sunbathe" />
             </ul>
-            <div className={classes.messageOption}>
-                <input className={classes.messagesInput} type='text'></input>
-                <button className={classes.messagesButton} type='button'>Send</button>
-            </div>
+            <AddMessage text='Send' />
         </div>
     )
 }

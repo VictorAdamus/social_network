@@ -8,7 +8,7 @@
 .messagesList {
     padding: 10px;
     margin: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid grey;
     border-radius: 20px;
     min-height: 400px;
@@ -17,59 +17,4 @@
     justify-content: end;
     height: 100%;
     margin-bottom: 20px;
-}
-
-.messagesItem {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-gap: 20px;
-}
-
-.messagesItemAvatar{
-    color: gold;
-    text-shadow: 1px 1px 2px gold;
-}
-
-.messagesItemText {
-    margin-left: auto;
-}
-
-.messageOption {
-    display: flex;
-}
-
-.messagesInput {
-    padding: 10px;
-    outline: none;
-    border: 2px solid grey;
-    border-radius: 10px;
-    width: 100%;
-    margin-right: 20px;
-}
-
-.messagesButton {
-    font-family: 'System', sans-serif;
-    font-size: 28px;
-    cursor: pointer;
-    padding: 10px 5px;
-    background: linear-gradient(45deg, rgba(211,211,211,1) 26%,rgba(201,193,144,1) 72%,rgba(183,173,112,1) 100%);
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
-    min-width: 160px;
-    transition: all 1s ease;
-    box-sizing: border-box;
-}
-
-.messagesButton:hover {
-    transform: rotateZ(5deg);
-    box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.5);
-}
-
-.messagesButton:active {
-    background: linear-gradient(45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%);
 }

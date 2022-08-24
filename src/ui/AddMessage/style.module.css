@@ -1,0 +1,19 @@
+.messageOption {
+    display: flex;
+}
+
+.messagesInput {
+    padding: 10px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.messagesInput:active,
+.messagesInput:focus {
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+}

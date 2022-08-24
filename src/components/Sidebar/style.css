@@ -1,6 +1,6 @@
 .sidebar {
-    background: linear-gradient(45deg, rgba(248, 255, 232, 1) 28%, rgba(227, 245, 171, 1) 68%, rgba(217, 221, 150, 1) 100%);
-    grid-area: 'sidebar';
+    background-color: rgba(217, 221, 150, 1);
+    grid-area: sidebar;
     border-radius: 10px;
     padding: 40px 30px;
     display: flex;
@@ -21,21 +21,20 @@
     font-size: 28px;
     cursor: pointer;
     padding: 10px 5px;
-    background: linear-gradient(45deg, rgba(211,211,211,1) 26%,rgba(201,193,144,1) 72%,rgba(183,173,112,1) 100%);
+    background-color:rgba(128,128,128,0.2);
     text-align: center;
     border-radius: 10px;
-    transition: all 1s ease;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 
 .sidebar__link:hover {
-    transform: rotateZ(5deg);
-    box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar__link:active {
-    background: linear-gradient(45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar__item:not(:last-child) {
@@ -43,5 +42,6 @@
 }
 
 .active {
-    background: linear-gradient(45deg, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
 }
